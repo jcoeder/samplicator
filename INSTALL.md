@@ -10,6 +10,8 @@ The configure script is not included in the source repository.  You
 can create it using `autogen.sh`.  Note that GNU automake and GNU
 autoconf are required for this.
 
+       $ ./autogen
+
 Configure, Compile, and Install
 -------------------------------
 
