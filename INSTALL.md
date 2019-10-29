@@ -8,12 +8,12 @@ Copyright (c) 2000-2015 Simon Leinen  <simon.leinen@gmail.com>
 Install Prerequisites
 --------------------------------------------------------
 
-	$ yum install gcc make automake git -y
+	yum install gcc make automake git -y
 
 Clone the Git Repo
 --------------------------------------------------------
 
-	$ git clone https://github.com/sleinen/samplicator.git
+	git clone https://github.com/sleinen/samplicator.git
 
 Creating the configure script (when installing from Git)
 --------------------------------------------------------
@@ -53,13 +53,13 @@ included. It works at least on CentOS 7.x, use as an example:
 
 - modify `ExecStart` as desired for your local situation
 
-`$ vi /etc/systemd/system/samplicator.service`
+`vi /etc/systemd/system/samplicator.service`
 
 	ExecStart=/usr/local/bin/samplicate -S -c /opt/samplicator/etc/samplicator.conf -p 162 -d 0 -f
 	
 - write the referred `samplicator.conf`
 
-`$ vi /opt/samplicator/etc/samplicator.conf`
+`vi /opt/samplicator/etc/samplicator.conf`
 
 	172.16.1.1/255.255.255.255: 10.1.5.10/4739
 	172.16.2.1/255.255.255.255: 10.1.5.10/4739
