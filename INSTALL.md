@@ -51,8 +51,8 @@ included. It works at least on CentOS 7.x, use as an example:
 
 - modify `ExecStart` as desired for your local situation
 
-	$ vi /etc/systemd/system/samplicator.service
-	$ ExecStart=/usr/local/bin/samplicate -S -c /opt/samplicator/etc/samplicator.conf -p 162 -d 0 -f
+`$ vi /etc/systemd/system/samplicator.service`
+`$ ExecStart=/usr/local/bin/samplicate -S -c /opt/samplicator/etc/samplicator.conf -p 162 -d 0 -f`
 	
 - write the referred `samplicator.conf`
 
