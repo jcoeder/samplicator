@@ -3,6 +3,16 @@ Instructions for installing the samplicator
 
 Copyright (c) 2000-2015 Simon Leinen  <simon.leinen@gmail.com>
 
+Install Prerequisites
+--------------------------------------------------------
+
+	$ yum install gcc make automake git -y
+
+Clone the Git Repo
+--------------------------------------------------------
+
+	$ git clone https://github.com/sleinen/samplicator.git
+
 Creating the configure script (when installing from Git)
 --------------------------------------------------------
 
@@ -10,7 +20,7 @@ The configure script is not included in the source repository.  You
 can create it using `autogen.sh`.  Note that GNU automake and GNU
 autoconf are required for this.
 
-    $ ./autogen
+	$ ./autogen
 
 Configure, Compile, and Install
 -------------------------------
@@ -19,7 +29,7 @@ This distribution uses GNU configure for portability and flexibility
 of installation.  You must configure the program for your system
 before you can compile it using make:
 
-	$ ./configure
+   	$ ./configure
 	$ make
 
 The program can then be installed (under /usr/local/bin by default)
