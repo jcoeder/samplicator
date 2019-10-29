@@ -14,6 +14,12 @@ Clone the Git Repo
 --------------------------------------------------------
 
 	git clone https://github.com/sleinen/samplicator.git
+	
+
+Navigate to cloned directory
+--------------------------------------------------------
+
+`cd samplicator/`
 
 Creating the configure script (when installing from Git)
 --------------------------------------------------------
