@@ -21,7 +21,7 @@ The configure script is not included in the source repository.  You
 can create it using `autogen.sh`.  Note that GNU automake and GNU
 autoconf are required for this.
 
-	$ ./autogen
+`./autogen`
 
 Configure, Compile, and Install
 -------------------------------
@@ -30,13 +30,13 @@ This distribution uses GNU configure for portability and flexibility
 of installation.  You must configure the program for your system
 before you can compile it using make:
 
-   	$ ./configure
-	$ make
+`./configure`
+`make`
 
 The program can then be installed (under /usr/local/bin by default)
 using "make install":
 
-	$ make install
+`make install`
 
 The configure script accepts many arguments, some of which may even be
 useful.  Using "./configure --prefix ..." you can specify a directory
@@ -52,7 +52,8 @@ included. It works at least on CentOS 7.x, use as an example:
 - modify `ExecStart` as desired for your local situation
 
 `$ vi /etc/systemd/system/samplicator.service`
-`$ ExecStart=/usr/local/bin/samplicate -S -c /opt/samplicator/etc/samplicator.conf -p 162 -d 0 -f`
+
+	$ ExecStart=/usr/local/bin/samplicate -S -c /opt/samplicator/etc/samplicator.conf -p 162 -d 0 -f
 	
 - write the referred `samplicator.conf`
 
