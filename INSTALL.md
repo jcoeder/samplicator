@@ -2,6 +2,7 @@ Instructions for installing the samplicator
 ===========================================
 
 Forked to make installation instructions a little more clear.
+
 Copyright (c) 2000-2015 Simon Leinen  <simon.leinen@gmail.com>
 
 Install Prerequisites
