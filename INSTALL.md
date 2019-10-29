@@ -1,6 +1,7 @@
 Instructions for installing the samplicator
 ===========================================
 
+Forked to make installation instructions a little more clear.
 Copyright (c) 2000-2015 Simon Leinen  <simon.leinen@gmail.com>
 
 Install Prerequisites
@@ -49,6 +50,10 @@ A simple `samplicator.service` systemd Service File for samplicator is
 included. It works at least on CentOS 7.x, use as an example:
 
 - modify `ExecStart` as desired for your local situation
+
+	$ vi /etc/systemd/system/samplicator.service
+	$ ExecStart=/usr/local/bin/samplicate -S -c /opt/samplicator/etc/samplicator.conf -p 162 -d 0 -f
+	
 - write the referred `samplicator.conf`
 
 Then install and start the new service. On my CentOS 7.2, it looks like this:
