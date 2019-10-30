@@ -63,16 +63,16 @@ If you ran make install with the de
 
 `vi /etc/systemd/system/samplicator.service`
 
-	ExecStart=/usr/local/bin/samplicate -S -c /opt/samplicator/etc/samplicator.conf -p 162 -d 0 -f
+	ExecStart=/usr/local/bin/samplicate -S -c /opt/samplicator/etc/samplicator.conf -p 2055 -d 0 -f
 	
 - write the referred `samplicator.conf`
 
 `vi /opt/samplicator/etc/samplicator.conf`
 
-	172.16.1.1/255.255.255.255: 10.1.5.10/4739
-	172.16.2.1/255.255.255.255: 10.1.5.10/4739
-	172.16.3.1/255.255.255.255: 10.1.5.10/4739
-	172.16.4.1/255.255.255.255: 10.1.5.10/4739
+	172.16.1.1/255.255.255.255: 10.1.5.10/2055
+	172.16.2.1/255.255.255.255: 10.1.5.10/2055
+	172.16.3.1/255.255.255.255: 10.1.5.10/2055
+	172.16.4.1/255.255.255.255: 10.1.5.10/2055
 
 Then install and start the new service. On my CentOS 7.2, it looks like this:
 
