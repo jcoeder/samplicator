@@ -59,12 +59,21 @@ included. It works at least on CentOS 7.x, use as an example:
 
 - modify `ExecStart` as desired for your local situation
 
-If you ran make install with the de
+If you ran make install with the defeault options...
+
+`cp samplicator.service /etc/systemd/system/samplicator.service`
 
 `vi /etc/systemd/system/samplicator.service`
 
+Edit the following line to look like this in order to listen on port 2055
+
 	ExecStart=/usr/local/bin/samplicate -S -c /opt/samplicator/etc/samplicator.conf -p 2055 -d 0 -f
-	
+
+
+- create a the directory for the configuration file
+
+`mkdir -p /opt/samplicator/etc/`
+
 - write the referred `samplicator.conf`
 
 `vi /opt/samplicator/etc/samplicator.conf`
@@ -76,6 +85,6 @@ If you ran make install with the de
 
 Then install and start the new service. On my CentOS 7.2, it looks like this:
 
-	cp samplicator.service /etc/systemd/system/samplicator.service
 	systemctl daemon-reload
 	systemctl start samplicator.service
+	systemctl enable samplicator.service
