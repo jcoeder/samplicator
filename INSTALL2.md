@@ -1,6 +1,46 @@
+Create a systemd file which will allow you to reference the same service running on different ports
+
+`vi /etc/systemd/system/samplicator@.service`
+
+
+	[Unit]
+	Description=Samplicator
+	After=network.target
+
+	[Service]
+	Type=forking
+
+	#SNMP Traps
+	ExecStart=/usr/local/bin/samplicate -S -c /opt/samplicator/etc/samplicator%I.conf -p %I -d 0 -f
+
+	[Install]
+	WantedBy=multi-user.target
+
+
+Create a configuraiton file for each port you want to listen on
+
+`vi /opt/samplicator/etc/samplicator2055.conf`
+
+
+	#Send any flow to SolarWinds
+	0.0.0.0/0.0.0.0: 10.5.1.10/2055
+
+	#Send edge router flows to Noction
+	88.88.22.1/255.255.255.255: 99.99.22.22/2055
+	88.88.22.2/255.255.255.255: 99.99.22.22/2055
+
+
+`vi /opt/samplicator/etc/samplicator162.conf`
+
+
+	#Send any flow to SolarWinds
+	0.0.0.0/0.0.0.0: 10.5.1.10/2055
+
+
 Create a script to help you start, stop, and restart services
 
 `vi /usr/bin/samplicator`
+
 
 	#!/bin/bash
 	
