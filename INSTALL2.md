@@ -48,7 +48,11 @@ Create a script to help you start, stop, and restart services
 	fi
 	done
 
+
 `samplicator --help
+
 samplicator --start
+
 samplicator --stop
+
 samplicator --restart`
