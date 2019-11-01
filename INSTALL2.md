@@ -23,7 +23,7 @@ Create a configuraiton file for each port you want to listen on
 
 
 	#Send any flow to SolarWinds
-	0.0.0.0/0.0.0.0: 10.5.1.10/2055
+	0.0.0.0/0.0.0.0: 10.55.11.10/2055
 
 	#Send edge router flows to Noction
 	88.88.22.1/255.255.255.255: 99.99.22.22/2055
@@ -34,7 +34,7 @@ Create a configuraiton file for each port you want to listen on
 
 
 	#Send any flow to SolarWinds
-	0.0.0.0/0.0.0.0: 10.5.1.10/2055
+	0.0.0.0/0.0.0.0: 10.55.11.10/2055
 
 
 Create a script to help you start, stop, and restart services
