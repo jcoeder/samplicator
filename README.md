@@ -1,3 +1,7 @@
+Forked from sleinen/samplicator
+
+Forked for my reference and added notes.  Modified [INSTALL.md](INSTALL.md). and [INSTALL2.md](INSTALL2.md).
+
 UDP Samplicator
 ===============
 
