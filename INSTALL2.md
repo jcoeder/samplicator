@@ -49,10 +49,10 @@ Create a script to help you start, stop, and restart services
 	done
 
 
-`samplicator --help
+`samplicator --help`
 
-samplicator --start
+`samplicator --start`
 
-samplicator --stop
+`samplicator --stop`
 
-samplicator --restart`
+`samplicator --restart`
