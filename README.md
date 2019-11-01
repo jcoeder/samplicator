@@ -16,6 +16,7 @@ INSTALLATION
 ------------
 
 See [INSTALL.md](INSTALL.md).
+
 Also [INSTALL2.md](INSTALL2.md).
 
 AUTHORS
