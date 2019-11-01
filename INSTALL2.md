@@ -1,5 +1,8 @@
+Create a script to help you start, stop, and restart services
 
-	`#!/bin/bash
+`vi /usr/bin/samplicator`
+
+	#!/bin/bash
 	
 	ports=(
 	  162
@@ -43,4 +46,9 @@
 	      ((i++))
 	    done
 	fi
-	done`
+	done
+
+`samplicator --help
+samplicator --start
+samplicator --stop
+samplicator --restart`
