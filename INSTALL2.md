@@ -37,6 +37,12 @@ Create a configuraiton file for each port you want to listen on
 	0.0.0.0/0.0.0.0: 10.55.11.10/2055
 
 
+Start, stop, and enable the services individually
+
+`systemctl start samplicator@2055.service`
+
+`systemctl enable samplicator@162.service`
+
 Create a script to help you start, stop, and restart services
 
 `vi /usr/bin/samplicator`
